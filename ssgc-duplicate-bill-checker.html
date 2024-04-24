@@ -1,0 +1,75 @@
+<style>
+.bill-form-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px; /* Increased padding for spacing */
+border: none;
+box-shadow: 0px 5px 10px 2px rgba(0, 128, 255, 0.2); /* Light blue box shadow with 20% transparency, adjusted for all sides */
+border-radius: 5px;
+margin: 10px auto;
+max-width: 600px; /* Sets a maximum width for responsiveness */
+}
+
+.bill-form-container input[type="text"],
+.bill-form-container input[type="submit"] {
+padding: 15px 20px; /* Increased padding for better spacing */
+border: 1px solid #ccc;
+border-radius: 3px;
+margin-bottom: 10px; /* Maintains spacing between elements */
+width: 100%; /* Fills the container width */
+}
+
+.bill-form-container input[type="submit"] {
+background-color: #0372B8; /* Dark blue color */
+border: none;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px; /* Restored original button radius */
+transition: 0.3s; /* Maintains hover effect */
+}
+
+.bill-form-container input[type="submit"]:hover {
+background-color: #025990; /* Darker shade of blue on hover */
+}
+
+/* Add an icon using Font Awesome (replace with your preferred icon library) */
+.bill-form-container .fa-search {
+margin-right: 5px;
+color: #fff; /* Match button text color */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+.bill-form-container {
+max-width: 100%; /* 100% width on screens less than 768px */
+}
+}
+</style>
+
+<form method="post" id="billForm" class="bill-form-container">
+
+<i class="fas fa-search"></i> <input type="text" maxlength="11" id="reference" name="reference" placeholder="Enter Account Number">
+
+<input class="button" type="submit" value="Check Bill" onclick="myFunction()">
+
+</form>
+
+<script type="text/javascript">
+function myFunction() {
+var x = document.getElementById("reference").value;
+var a = x.length;
+
+if (a === 11) {
+var y = "https://www.ssgc.com.pk/viewbill?proc=viewbill&contype=NewCon&mdids=85&consumer=" + x;
+window.open(y); // Opens a new window/tab
+// OR: window.location.href = y; // Replaces current page content
+} else {
+alert(`Please enter a 11-digit account number. You entered ${a} digits.`);
+}
+}
+</script>

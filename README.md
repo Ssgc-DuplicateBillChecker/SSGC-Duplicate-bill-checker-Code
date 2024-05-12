@@ -27,7 +27,7 @@ This code utilizes basic CSS to style the form elements like the input field and
 If you'd like to contribute to this project, feel free to fork the repository on GitHub and submit a pull request with your changes.
 
 **Support**
-We provide additional resources, information and support related to SSGC bills on our website(https://ssgcbill.pk). please visit if you need any help
+We provide additional resources, information and support related to SSGC bills on our website(https://sngplbill.pk). please visit if you need any help
 
 
 Additional Notes:

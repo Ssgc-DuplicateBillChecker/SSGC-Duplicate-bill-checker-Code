@@ -3,7 +3,7 @@ Title: SSGC Bill Checker
 
 **Description:**
 This is a simple web form that allows users to check their SSGC bill by entering their 11-digit account number. Upon submission, it opens the SSGC bill in a new window.
-This Code Developed by SSGCbill.pk (https://ssgcbill.pk/). 
+This Code Developed by SSGCbill.pk (https://sngplbill.pk/). 
 **Installation (if applicable)**
 No installation is required. This code can be directly included in an HTML file.
 
